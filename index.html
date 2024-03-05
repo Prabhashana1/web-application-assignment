@@ -1,72 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mermaid Aquarium</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mermaid Aquarium</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="aboutus.html">Mermaid Aquarium</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="product.html">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
 
-      <section class="hero">
-        <div class="container">
-          <div class="slideshow-container">
-            <img src="/src/image1.jpg" alt="image1">
-            <img src="/src/image2.jpg" alt="image2">
-            <img src="/src/image3.jpg" alt="image3">
-            <img src="/src/image4.jpg" alt="image4">
-            <img src="/src/image5.jpg" alt="image5">
-        
-            <div class="slide-caption">
-              <h2>Welcome to Mermaid Aquarium</h2>
-              <p>Discover a world of underwater beauty.</p>
-              <a href="#" class="btn">Explore Now</a>
-            </div>
-          </div>
-        </div>
-      </section>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="aboutus.html">Mermaid Aquarium</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-      <footer class="bg-dark text-light text-center py-4">
-        <div class="container">
-          <p>&copy; 2024 Mermaid Aquarium. All rights reserved.</p>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/src/image3.jpg" class="d-block" alt="Slider Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="/src/image5.jpg" class="d-block" alt="Slider Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="/src/image4.jpg" class="d-block" alt="Slider Image 3">
+      </div>
+      <div class="carousel-item">
+        <img src="/src/service/Fish and Plant Selection.jpeg" class="d-block" alt="Slider Image 4">
+      </div>
+      <div class="carousel-item">
+        <img src="/src/service/Aquarium-Maintenance.webp" class="d-block" alt="Slider Image 5">
+      </div>
+      <div class="carousel-item">
+        <img src="/src//product/product6.png" class="d-block" alt="Slider Image 6">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="container-home">
+    <h1>Welcome to Mermaid Aquarium</h1>
+    <p>Join our store in Dambulla as we continue to explore the depths of the ocean and bring the wonders of aquatic
+      life closer to home.</p>
+
+    <h2>Explore Our Galleries</h2>
+    <div class="gallery-container">
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="/src/image4.jpg" alt="Gallery Image 1">
         </div>
-      </footer>
-    
-      
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <script src="script.js"></script>
+        <div class="gallery-item">
+          <img src="/src/image5.jpg" alt="Gallery Image 2">
+        </div>
+        <div class="gallery-item">
+          <img src="/src/product/product6.png" alt="Gallery Image 3">
+        </div>
+
+      </div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="/src/image1.jpg" alt="Gallery Image 4">
+        </div>
+        <div class="gallery-item">
+          <img src="/src/image2.jpg" alt="Gallery Image 5">
+        </div>
+        <div class="gallery-item">
+          <img src="/src/image3.jpg" alt="Gallery Image 6">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-light text-center py-4">
+    <div class="container">
+      <p>&copy; 2024 Mermaid Aquarium. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
