@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mermaid Aquarium</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <a class="navbar-brand" href="aboutus.html">Mermaid Aquarium</a>
@@ -17,7 +17,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
@@ -32,7 +32,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="gallery.html">Gallery</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
@@ -40,33 +40,53 @@
         </div>
       </nav>
 
-      <section class="hero">
-        <div class="container">
-          <div class="slideshow-container">
-            <img src="/src/image1.jpg" alt="image1">
-            <img src="/src/image2.jpg" alt="image2">
-            <img src="/src/image3.jpg" alt="image3">
-            <img src="/src/image4.jpg" alt="image4">
-            <img src="/src/image5.jpg" alt="image5">
-        
-            <div class="slide-caption">
-              <h2>Welcome to Mermaid Aquarium</h2>
-              <p>Discover a world of underwater beauty.</p>
-              <a href="#" class="btn">Explore Now</a>
-            </div>
+
+      <div class="container-contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            <div class="invalid-feedback">Please enter your name.</div>
           </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+            <div class="invalid-feedback">Please enter your message.</div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    
+        <div class="contact-info">
+          <h2>Our Location</h2>
+          <p>Mermaid Aquarium</p>
+          <p>123 Ocean Boulevard</p>
+          <p>Dambulla, Sri Lanka</p>
+    
+          <h2>Contact Information</h2>
+          <p>Email: info@mermaidaquarium.com</p>
+          <p>Phone: +94 123 456 789</p>
         </div>
-      </section>
+      </div>
+
+
+
 
       <footer class="bg-dark text-light text-center py-4">
         <div class="container">
           <p>&copy; 2024 Mermaid Aquarium. All rights reserved.</p>
         </div>
       </footer>
-    
-      
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <script src="script.js"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
